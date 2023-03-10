@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
@@ -16,12 +16,16 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section class="Intro">
+			<header style="display: flex; justify-content: space-between; align-items: center;">
+				<i class="fa-solid fa-code"></i>
+				<p style="font-size: 1.5rem;"><i class="fa-solid fa-copyright"></i> By Mora Raphael - 2023</p>
+			</header>
+			<section id="intro">
 				<h1>MORA RAPHAEL</h1>
 				<h2>Développeur FullStack</h2>
 				<img src="images/me.jpg" alt="Photo de moi" style="border-radius: 50%;">
 			</section>
-			<section>
+			<section id="about">
 				<h2 style="border-bottom: 2px solid;">À propos</h2>
 				<p>
 					Après 15 ans de riches expériences variées, j'ai choisi de suivre
@@ -48,15 +52,15 @@
 					avec l'école EPSI</p>
 				</p>
 			</section>
-			<section>
+			<section id="project">
 				<h2 style="border-bottom: 2px solid;">Projets</h2>
 				<section>
 					<article>
 						<h3>Booki</h3>
 						<a href="https://github.com/RaphaelMora/Projet-2" target="_blank"><img
-								style="border-radius: 25px; width: 50%;height: 400px;"
+								style="border-radius: 25px; width: 50%;height: 500px; "
 								src="https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png"
-								alt="Exemple projet booki"></a>
+								alt="Exemple projet"></a>
 						<p>Transformez une maquette en site web avec HTML & CSS</p>
 					</article>
 				</section>
@@ -64,14 +68,57 @@
 					<article>
 						<h3>OhMyFood</h3>
 						<a href="https://github.com/RaphaelMora/OhMyFood" target="_blank"><img
-								style="border-radius: 25px; width: 50%; height: 400px;"
+								style="border-radius: 25px; width: 50%; height: 500px;"
 								src="https://repository-images.githubusercontent.com/337177403/bc6fba71-f56d-4131-83f9-2b03784d3461"
-								alt="Exemple projet booki"></a>
+								alt="Exemple projet"></a>
 						<p>Site de réservation en restaurantion avec animation SASS</p>
 					</article>
 				</section>
+				<section>
+					<article>
+						<h3>La Panthère</h3>
+						<a href="https://github.com/RaphaelMora/P4-LaPanthere" target="_blank"><img
+								style="border-radius: 25px; width: 50%; height: 500px; background-color: white;"
+								src="https://user.oc-static.com/upload/2022/02/16/16450043954887_cover%20small.png"
+								alt="Exemple projet"></a>
+						<p>Optimisation et amélioration du référencement d'un site existant en html css grace au
+							SEO/accessibilité</p>
+					</article>
+				</section>
+				<section>
+					<article>
+						<h3>Kanap</h3>
+						<a href="https://github.com/RaphaelMora/P5-Kanap" target="_blank"><img
+								style="border-radius: 25px; width: 50%; height: 500px;"
+								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL6hkhWtZNDxdbc29j7mAZm87wUeyfcmL5Mg&usqp=CAU"
+								alt="Exemple projet"></a>
+						<p>Site de e.commerce dynamique de vente de canapé qui récupère son contenu d'une API</p>
+					</article>
+				</section>
+				<section>
+					<article>
+						<h3>Piiquante</h3>
+						<a href="https://github.com/RaphaelMora/P6-Piiquante" target="_blank"><img
+								style="border-radius: 25px; width: 50%; height: 500px;"
+								src="data:image/png;base64,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"
+								alt="Exemple projet"></a>
+						<p>Création d'une API regroupant des sauce piquante et connexion a un site en React pré existant
+						</p>
+					</article>
+				</section>
+				<section>
+					<article>
+						<h3>Kasa</h3>
+						<a href="https://github.com/RaphaelMora/Projet7-Kasa" target="_blank"><img
+								style="border-radius: 25px; width: 50%; height: 500px;"
+								src="https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png"
+								alt="Exemple projet"></a>
+						<p>Site en React de location d'appartement qui récupère sa liste depuis un json
+						</p>
+					</article>
+				</section>
 			</section>
-			<section>
+			<section id="lang">
 				<h2 style="border-bottom: 2px solid;">Mes langages</h2>
 				<section>
 					<article>
@@ -158,36 +205,16 @@
 					</article>
 				</section>
 			</section>
-			<section>
+			<section id="form">
 				<h2 style="border-bottom: 2px solid;">Me contacter</h2>
-				<form action="" method="get" class="form-example" style="margin: 15% 0;">
-					<div class="form-example"
-						style="display: flex; align-items: center; justify-content: center; gap: 3.7%;">
-						<label for="name">Votre nom: </label>
-						<input style="height: 40px; font-size: 1.8rem;" type="text" name="name" id="name" required:
-							true, maxLength: 80>
-					</div>
+				<img style="border-radius: 40%;" src="images/Map.png" alt="location">
+				<p><i class="fa-solid fa-house"></i> 33000 Bordeaux</p>
+				<p><i class="fa-solid fa-phone"></i> 0650588031</p>
+				<p><i class="fa-solid fa-envelope"></i> mora.raphael@gmail.com</p>
 
-					<div class="form-example"
-						style="display: flex; align-items: center; justify-content: center; gap: 3%; margin: 2% 0;">
-						<label for="email">Votre email: </label>
-						<input style="height: 40px; font-size: 1.8rem;" type="email" name="email" id="email" required:
-							true, maxLength: 80>
-					</div>
-					<div class="form-example"
-						style="display: flex; align-items: center; justify-content: center; gap: 1.9%;">
-						<label for="email">Votre email: </label>
-						<textarea style="height: 100px; font-size: 1.8rem;" id="msg" name="user_message"
-							maxlength="1200"></textarea>
-					</div>
-					<div class="form-example" style="margin: 5% 52%;">
-						<input style="height: 40px; font-size: 1.8rem; " type="submit" value="Envoyer!">
-					</div>
-				</form>
 			</section>
 		</div>
 	</div>
-
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
